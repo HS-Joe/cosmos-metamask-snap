@@ -89,7 +89,7 @@ export const connectSnap = async (
   params: Record<'version' | string, unknown> = {},
 ) => {
   const provider = await getProvider();
-  provider.request({
+  return provider.request({
     method: 'wallet_requestSnaps',
     params: {
       [snapId]: params,
