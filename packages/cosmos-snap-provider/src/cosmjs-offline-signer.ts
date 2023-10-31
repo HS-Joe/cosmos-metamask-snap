@@ -1,5 +1,6 @@
 /* eslint jsdoc/match-description: 0 */ // --> OFF
 /* eslint require-atomic-updates: 0 */ // --> OFF
+/* eslint jsdoc/require-param: 0 */ // --> OFF
 
 import { SignDoc } from 'cosmjs-types/cosmos/tx/v1beta1/tx';
 import { AccountData, AminoSignResponse } from '@cosmjs/amino';
@@ -64,7 +65,7 @@ export class CosmjsOfflineSigner implements OfflineDirectSigner {
       this.chainId,
       signerAddress,
       signDoc,
-      options
+      options,
     ) as unknown as Promise<AminoSignResponse>;
   }
 }
@@ -91,11 +92,13 @@ export async function signArbitrary(
   chainId: string,
   signer: string,
   data: string,
+  signOptions?: { enableExtraEntropy?: boolean },
 ) {
   const { signDoc } = getADR36SignDoc(signer, data);
   const result = await requestSignAmino(chainId, signer, signDoc, {
     isADR36: true,
-    preferNoSetFee: true
+    preferNoSetFee: true,
+    enableExtraEntropy: signOptions?.enableExtraEntropy,
   });
   return result.signature;
 }

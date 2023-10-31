@@ -179,6 +179,18 @@ const Chains = {
     denom: 'uc4e',
     decimals: 6,
   },
+  celestia: {
+    chainId: 'celestia',
+    chainName: 'Celestia',
+    bech32Config: {
+      bech32PrefixAccAddr: 'celestia',
+    },
+    bip44: {
+      coinType: 118,
+    },
+    denom: 'utia',
+    decimals: 6,
+  },
   'cheqd-mainnet-1': {
     chainId: 'cheqd-mainnet-1',
     chainName: 'cheqd',
@@ -190,18 +202,6 @@ const Chains = {
     },
     denom: 'ncheq',
     decimals: 9,
-  },
-  'morocco-1': {
-    chainId: 'morocco-1',
-    chainName: 'chronicnetwork',
-    bech32Config: {
-      bech32PrefixAccAddr: 'chronic',
-    },
-    bip44: {
-      coinType: 118,
-    },
-    denom: 'ucht',
-    decimals: 6,
   },
   'comdex-1': {
     chainId: 'comdex-1',
@@ -311,6 +311,18 @@ const Chains = {
     denom: 'udec',
     decimals: 6,
   },
+  'morocco-1': {
+    chainId: 'morocco-1',
+    chainName: 'terpnetwork',
+    bech32Config: {
+      bech32PrefixAccAddr: 'terp',
+    },
+    bip44: {
+      coinType: 118,
+    },
+    denom: 'uterp',
+    decimals: 6,
+  },
   'desmos-mainnet': {
     chainId: 'desmos-mainnet',
     chainName: 'desmos',
@@ -334,6 +346,18 @@ const Chains = {
     },
     denom: 'udig',
     decimals: 6,
+  },
+  dydx: {
+    chainId: 'dydx-mainnet-1',
+    chainName: 'dYdX Protocol',
+    bech32Config: {
+      bech32PrefixAccAddr: 'dydx',
+    },
+    bip44: {
+      coinType: 118,
+    },
+    denom: 'DYDX',
+    decimals: 18,
   },
   'dyson-mainnet-01': {
     chainId: 'dyson-mainnet-01',
@@ -1150,6 +1174,18 @@ const Chains = {
     },
     denom: 'uvdl',
     decimals: 6,
+  },
+  'vota-ash': {
+    chainId: 'vota-ash',
+    chainName: 'doravota',
+    bech32Config: {
+      bech32PrefixAccAddr: 'dora',
+    },
+    bip44: {
+      coinType: 118,
+    },
+    denom: 'peaka',
+    decimals: 18,
   },
 };
 

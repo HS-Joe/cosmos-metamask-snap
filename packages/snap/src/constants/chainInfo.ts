@@ -149,6 +149,16 @@ const Chains = {
       coinType: 4444,
     },
   },
+  celestia: {
+    chainId: 'celestia',
+    chainName: 'Celestia',
+    bech32Config: {
+      bech32PrefixAccAddr: 'celestia',
+    },
+    bip44: {
+      coinType: 118,
+    },
+  },
   'cheqd-mainnet-1': {
     chainId: 'cheqd-mainnet-1',
     chainName: 'cheqd',
@@ -161,9 +171,9 @@ const Chains = {
   },
   'morocco-1': {
     chainId: 'morocco-1',
-    chainName: 'chronicnetwork',
+    chainName: 'terpnetwork',
     bech32Config: {
-      bech32PrefixAccAddr: 'chronic',
+      bech32PrefixAccAddr: 'terp',
     },
     bip44: {
       coinType: 118,
@@ -277,6 +287,16 @@ const Chains = {
     },
     bip44: {
       coinType: 118,
+    },
+  },
+  dydx: {
+    chainId: 'dydx-mainnet-1',
+    chainName: 'dYdX Protocol',
+    bech32Config: {
+      bech32PrefixAccAddr: 'dydx',
+    },
+    bip44: {
+      coinType: '118',
     },
   },
   'dyson-mainnet-01': {
@@ -967,6 +987,16 @@ const Chains = {
     },
     bip44: {
       coinType: 370,
+    },
+  },
+  'vota-ash': {
+    chainId: 'vota-ash',
+    chainName: 'doravota',
+    bech32Config: {
+      bech32PrefixAccAddr: 'dora',
+    },
+    bip44: {
+      coinType: 118,
     },
   },
 };
